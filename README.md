@@ -9,6 +9,8 @@ README.md
   - [3) Users](#3-users)
   - [4) Functional requirements](#4-functional-requirements)
   - [5) Software Design Description](#5-software-design-description)
+    - [a) User Interface Design](#a-user-interface-design)
+    - [b) Homepage](#b-homepage)
 
 
 ## 1) Introduction
@@ -40,3 +42,19 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 
 
 ## 5) Software Design Description
+
+### a) User Interface Design
+-Software design description contains a prototype of how the webpage will look like once it has been completed
+
+### b) Homepage
+
+
+![Homepage]
+
+
+
+-The homepage will contain the following:
+1) Navigation bar
+2) Jumbotron
+3) Descriptions
+4) Services
