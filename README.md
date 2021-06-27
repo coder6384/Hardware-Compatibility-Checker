@@ -11,6 +11,7 @@ README.md
   - [5) Software Design Description](#5-software-design-description)
     - [a) User Interface Design](#a-user-interface-design)
     - [b) Homepage](#b-homepage)
+    - [c) Authentication pages](#c-authentication-pages)
 
 
 ## 1) Introduction
@@ -57,3 +58,12 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 2) Jumbotron
 3) Descriptions
 4) Services
+
+### c) Authentication pages
+
+![signup](documentation/signup.png)
+
+-Here the user will be authenticated by being asked about their login information and sign in request
+1) Sign in 
+2) Log in out
+3) Log out
