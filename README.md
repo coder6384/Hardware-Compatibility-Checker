@@ -78,8 +78,8 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 
   | Column1| Data Type  |
 --|---------------|------  
-  |First_name   | small text
-  | Last name   | small text
-  | Password    | int(PK)
-  |E-mail address| Varchar
-  | Username| Varchar
+  |First_name    | small text |
+  | Last name    | small text |
+  | Password     | int(PK)    |
+  |E-mail address| Varchar    |
+  | Username     | Varchar    |
