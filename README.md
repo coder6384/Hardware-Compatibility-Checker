@@ -49,8 +49,7 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 ### b) Homepage
 
 
-![Homepage]
-
+![homepage](documentation/homepage.png)
 
 
 -The homepage will contain the following:
