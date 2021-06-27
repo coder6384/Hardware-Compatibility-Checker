@@ -12,6 +12,8 @@ README.md
     - [a) User Interface Design](#a-user-interface-design)
     - [b) Homepage](#b-homepage)
     - [c) Authentication pages](#c-authentication-pages)
+    - [d) Database design](#d-database-design)
+      - [Users table](#users-table)
 
 
 ## 1) Introduction
@@ -67,3 +69,17 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 1) Sign in 
 2) Log in 
 3) Log out
+
+
+### d) Database design
+ Contains the database table
+
+ #### Users table
+
+  | Column1| Data Type  |
+--|---------------|------  
+  |First_name   | small text
+  | Last name   | small text
+  | Password    | int(PK)
+  |E-mail address| Varchar
+  | Username| Varchar
