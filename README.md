@@ -65,5 +65,5 @@ The system will appeal to anyone looking to repair or upgrade their computers, b
 
 -Here the user will be authenticated by being asked about their login information and sign in request
 1) Sign in 
-2) Log in out
+2) Log in 
 3) Log out
