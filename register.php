@@ -1,7 +1,7 @@
 <html>
 <?php
 include_once "./layouts/main/header.php";
-if($_SERVER['REQUEST_METHOD']=='POST')
+if($_SERVER['REQUEST_METHOD']=='POST')    
 $first_name=$_POST['first_name'];
 $last_name=$_POST['last_name'];
 $email=$_POST['email'];
@@ -9,13 +9,14 @@ $password=$_POST['password'];
 $confirm_password=$_POST['confirm_password'];
 
 if (! $password == $confirm_password)
-      echo "Passwords do not"
+      echo "Passwords do not match"
+
 
 ?>
 
 <main class="container">
       <h1>Create an account</h1>
-      <form action="login.php" method="post";
+      <form action="" method="post"
       enctype="multipart/form-data">
 
 <div class="mb-3">
@@ -83,4 +84,3 @@ name="submit">
 include_once "./layouts/main/footer.php";
 
 ?>
-</html>
