@@ -125,7 +125,7 @@ Parts      |    Model       |   CPU                |     Storage       |      RA
     <link href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"rel="stylesheet"/>
 
     <title>Hello, world!</title>
-  </head>
+  </head>tables
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
