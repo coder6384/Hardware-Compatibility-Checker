@@ -2,21 +2,17 @@
   margin: 0;
 }
 
-.container {
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-}
-
-.container {
-  background-color: rgb(24, 41, 121);
+  height: 100vh;
 }
 
 nav {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background-color: rgb(32, 60, 112);
+  background-color: rgb(52, 52, 85);
 }
 
 nav > a {
@@ -26,10 +22,9 @@ nav > a {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-grow: 1;
   background-image: url("../documentation/behind.jpg");
-  color: white;
 }
 
 aside {
@@ -37,7 +32,7 @@ aside {
   background-color: rgb(41, 41, 129);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   padding: 0 15px;
   font-size: 1.2em;
   letter-spacing: 0.2em;
@@ -47,10 +42,15 @@ article {
   flex: 1;
 }
 
-.nav {
-  list-style-type: none;
+footer {
+  background-color: rgb(87, 87, 128);
+}
+.social {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
+.nav-link {
+  margin-right: 0.1rem;
 }
