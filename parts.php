@@ -6,17 +6,17 @@ require_once './core/Database.php';
 if ($_SERVER['REQUEST_METHOD'] =='POST'){
 $manufacturer = $_POST['manufacturer'];
 $model = $_POST['model'];
-$year_made = $_POST['year_made'];
-$market_price= $_POST['market_price'];
-
-
+$storage_type= $_POST['storage_type'];
+$ram=$_POST['ram'];
+$cpu= $_POST['cpu'];
+$charging_pin = $_POST['charging_pin'];
 
 
 
 
 }
-
 ?>
+
 
 <main class="container-fluid">
     <div class="row mt-10">
@@ -24,8 +24,7 @@ $market_price= $_POST['market_price'];
 
 
 
-            <h1 class=text-center>Admin Section</h1>
-            <h1 class=>Computer Details</h1>
+            <h1 class=text-center>Parts</h1>
             <form action="" method="post" enctype="multipart/form-data">
 
 
@@ -42,8 +41,8 @@ $market_price= $_POST['market_price'];
                 </div>
 
                 <div class="mb-3">
-                    <label for="year_made">year made</label>
-                    <input type="year_made" class="form-control" id="year_made" name="year_made" required>
+                    <label for="hard_disk">Storage type</label>
+                    <input type="hard_disk" class="form-control" id="hard_disk" name="hard_disk" required>
 
 
                 </div>
@@ -51,16 +50,30 @@ $market_price= $_POST['market_price'];
 
 
                 <div class="mb-3">
-                    <label for="market_price">Market Price</label>
-                    <input type="market_price" class="form-control" id="market_price" name="market_price" required>
+                    <label for="ram">ram</label>
+                    <input type="ram" class="form-control" id="ram" name="ram" required>
 
 
                 </div>
+
+                <div class="mb-3">
+                    <label for="cpu">cpu</label>
+                    <input type="cpu" class="form-control" id="cpu" name="cpu" required>
+
+
+                </div>
+                <div class="mb-3">
+                    <label for="charging_port">Charging pin</label>
+                    <input type="charging_pin" class="form-control" id="charging_pin" name="charging_pin" required>
+
+
+                </div>
+
                 <div class="mb-3">
                     <input type="submit" class="ms-auto btn btn-lg btn-primary" value="Add" name="submit">
+
+
                 </div>
-
-
 
             </form>
 

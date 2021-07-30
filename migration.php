@@ -13,6 +13,6 @@ $db->exec($sql);
 echo "applied migration\n";
 
 echo "applying migration\n";
-$sql="CREATE TABLE IF NOT EXISTS parts(id SERIAL,Manufacturer TINYTEXT NOT NULL, Model TINYTEXT NOT NULL, hard_disk TINYTEXT NOT NULL,ram TINYTEXT NOT NULL , cpu TINYTEXT NOT NULL,charging_pin TINYTEXT NOT NULL ,last_updated TIMESTAMP)";
+$sql="CREATE TABLE IF NOT EXISTS parts(id SERIAL,Manufacturer TINYTEXT NOT NULL, Model TINYTEXT NOT NULL, storage_type TINYTEXT NOT NULL,ram TINYTEXT NOT NULL , cpu TINYTEXT NOT NULL,charging_pin TINYTEXT NOT NULL ,last_updated TIMESTAMP)";
 $db->exec($sql);
 echo "applied migration\n";
