@@ -18,13 +18,14 @@ try{
     
     if(isset($_GET['search'])) {
         $key = $_GET['search'];
-        $query = "SELECT * FROM computer WHERE id LIKE '%$key%' OR Manufacturer LIKE '%$key%' OR Model LIKE '%$key%'";
+        $query = "SELECT * FROM computer WHERE id LIKE '%$key%' OR Category LIKE '%$key%' OR Manufacturer LIKE '%$key%' OR Model LIKE '%$key%'";
     }
     else $query = "SELECT * FROM computer";
     $data = $db->query($query);
     echo '<table width="70%" border="1" cellpadding="5" cellspacing="5">
     <tr>
     <th>id</th>
+    <th>Category</th> 
     <th>Manufacturer</th>
     <th>Model</th>
     <th>year_made</th>
@@ -35,6 +36,7 @@ try{
     {
         echo '<tr>
         <td>'.$row["id"].'</td>
+        <td>'.$row["Category"].'</td>
         <td>'.$row["Manufacturer"].'</td>
         <td>'.$row["Model"].'</td>
         <td>'.$row["year_made"].'</td>
