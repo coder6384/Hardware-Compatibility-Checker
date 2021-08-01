@@ -5,7 +5,7 @@ include_once './layouts/main/header.php';
 
 
 
-<main class="container-fluid">
+<main class="container-fluid bg-img">
 
     <h1 class=text-primary>Learn more on computers</h1>
     <p class=text-light>

@@ -5,7 +5,7 @@ include_once './layouts/main/header.php';
 
 <!-- Jumbotron -->
 
-<main class="container-fluid">
+<main class="container-fluid bg-img">
 
     <h1 class=text-light>Hadware Compatibility Checker</h1>
     <p class=text-light>
