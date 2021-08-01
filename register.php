@@ -32,7 +32,7 @@ if(!$errors){
 }
 ?>
 
-<main class="container-fluid">
+<main class="container-fluid bg-img">
     <div class="row mt-5">
         <div class="col-6 m-auto card shadow">
             <h1 class="text-center">Create an account</h1>
