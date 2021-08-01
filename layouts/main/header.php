@@ -43,7 +43,7 @@ require_once './core/Database.php';
 
 
 
-                    <?php  if(!$_SESSION['user']) { ?>
+                    <?php  if(!array_key_exists('user',$_SESSION)) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="register.php">Register</a>
                     </li>
@@ -55,7 +55,7 @@ require_once './core/Database.php';
                         <a class="nav-link" href="">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Welcome
+                        <a class="nav-link" href="">Welcome
                             <?php echo $_SESSION['user']['first_name']; ?> (Logout)
 
                         </a>
