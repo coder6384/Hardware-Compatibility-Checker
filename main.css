@@ -24,6 +24,9 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.bg-img {
   background-image: url("../documentation/behind.jpg");
 }
 
