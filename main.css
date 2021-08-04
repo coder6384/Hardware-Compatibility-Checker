@@ -1,29 +1,28 @@
 * {
   margin: 0;
 }
-
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-
 nav {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-color: rgb(52, 52, 85);
 }
-
 nav > a {
   text-decoration: none;
   cursor: pointer;
 }
-
 main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.bg-img {
   background-image: url("../documentation/behind.jpg");
 }
 
@@ -37,11 +36,9 @@ aside {
   font-size: 1.2em;
   letter-spacing: 0.2em;
 }
-
 article {
   flex: 1;
 }
-
 footer {
   background-color: rgb(87, 87, 128);
 }

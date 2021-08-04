@@ -62,12 +62,15 @@ require_once './core/Database.php';
                     </li>
                     <?php } ?>
 
+
                     <li class="nav-item">
-                        <a class="nav-link" href="admindash.php">admin</a>
+                        <a class="nav-link" href="lapdesk.php">Computer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="compatibility.php">Compatibility</a>
+                        <a class="nav-link" href="tableparts.php">Parts</a>
                     </li>
+
+
                 </ul>
             </div>
         </div>

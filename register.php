@@ -25,7 +25,7 @@ if(!$errors){
       $data = array ( $first_name, $last_name, $email, $password);
       $query = $db -> prepare ($statement);
       $query -> execute($data);
-      header("location: login.php");
+      header("location: index.php");
      exit();
 
 }

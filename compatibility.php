@@ -24,24 +24,25 @@ try{
     $data = $db->query($query);
     echo '<table width="70%" border="1" cellpadding="5" cellspacing="5">
     <tr>
-    <th>id</th>
     <th>Category</th> 
     <th>Manufacturer</th>
     <th>Model</th>
-    <th>year_made</th>
+    <th>display</th>
     <th>market_price</th>
+    <th>storage</th>
+    <th>ram</th>
     
     </tr>';
     foreach($data as $row)              
     {
         echo '<tr>
-        <td>'.$row["id"].'</td>
         <td>'.$row["Category"].'</td>
         <td>'.$row["Manufacturer"].'</td>
         <td>'.$row["Model"].'</td>
-        <td>'.$row["year_made"].'</td>
+        <td>'.$row["display"].'</td>
         <td>'.$row["market_price"].'</td> 
-        
+        <td>'.$row["storage"].'</td> 
+        <td>'.$row["ram"].'</td> 
         </tr>';
     }
     echo '</table>';

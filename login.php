@@ -45,6 +45,7 @@ require_once './core/Database.php';
 ?>
 
 <main class="container-fluid">
+
     <div class="row mt-5">
         <div class="col-6 m-auto card shadow">
 
@@ -67,7 +68,7 @@ require_once './core/Database.php';
 
                 </div>
                 <div class="mb-3">
-                    <a class="nav-link" href="admindash.php">login</a>
+
                     <input type="submit" class="ms-auto btn btn-lg btn-primary" value="Enter" name="submit">
 
                 </div>

@@ -6,19 +6,31 @@ require_once './core/Database.php';
 if ($_SERVER['REQUEST_METHOD'] =='POST'){
 $manufacturer = $_POST['manufacturer'];
 $model = $_POST['model'];
-$storage_type= $_POST['storage_type'];
-$ram=$_POST['ram'];
-$cpu= $_POST['cpu'];
+$storage_type = $_POST['storage_type'];
+$ram = $_POST['ram'];
+$cpu = $_POST['cpu'];
 $charging_pin = $_POST['charging_pin'];
+$display = $_POST['display'];
+$graphics_card = $_POST['graphics_card'];
+$other = $_POST['other'];
+$errors = array();
 
+if(!$errors){
+    $statement = "INSERT INTO parts( manufacturer,model,storage_type,ram,cpu,charging_pin,display,graphics_card,other) values (?,?,?,?,?,?,?,?,?)";
+    $data = array ( $manufacturer, $model, $storage_type, $ram,$cpu,$charging_pin,$display,$graphics_card,$other);
+    $query = $db -> prepare ($statement);
+    $query -> execute($data);
+    header("location: admindash.php");
+   exit();
 
-
+}
 
 }
 ?>
 
 
 <main class="container-fluid">
+
     <div class="row mt-10">
         <div class="col-7 m-auto card shadow">
 
@@ -41,8 +53,8 @@ $charging_pin = $_POST['charging_pin'];
                 </div>
 
                 <div class="mb-3">
-                    <label for="hard_disk">Storage type</label>
-                    <input type="hard_disk" class="form-control" id="hard_disk" name="hard_disk" required>
+                    <label for="">Storage type</label>
+                    <input type="storage_type" class="form-control" id="storage_type" name="storage_type" required>
 
 
                 </div>
@@ -63,12 +75,28 @@ $charging_pin = $_POST['charging_pin'];
 
                 </div>
                 <div class="mb-3">
-                    <label for="charging_port">Charging pin</label>
+                    <label for="charging_pin">Charging pin</label>
                     <input type="charging_pin" class="form-control" id="charging_pin" name="charging_pin" required>
 
 
                 </div>
+                <div class="mb-3">
+                    <label for="display"> Display</label>
+                    <input type="display" class="form-control" id="display" name="display" required>
 
+
+                </div>
+                <div class="mb-3">
+                    <label for="graphics_card">Graphics card</label>
+                    <input type="graphics_card" class="form-control" id="graphics_card" name="graphics_card" required>
+
+                </div>
+                <div class="mb-3">
+                    <label for="other"> Other</label>
+                    <input type="oher" class="form-control" id="other" name="other" required>
+
+
+                </div>
                 <div class="mb-3">
                     <input type="submit" class="ms-auto btn btn-lg btn-primary" value="Add" name="submit">
 

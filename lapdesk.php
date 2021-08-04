@@ -8,24 +8,19 @@ include_once './layouts/main/header.php';
 <main class="container-fluid">
     <main class="container-fluid bg-img">
 
-
-        <h1 class=text-light>Admin </h1>
+        <h1 class=text-light>Computers</h1>
         <p class=text-light>
-            DASHBOARD
+            Choose the category of the computer that you are in need of
             </div>
             </div>
 
             </div>
         <div>
-            <a class="btn btn-success btn-lg m-1 " href="admin.php">Add laptop</a>
+            <a class="btn btn-success btn-lg m-1 " href="compatibility.php">Laptops</a>
         </div>
         <div>
-            <a class="btn btn-warning btn-lg m-1 " href="admincomp.php">Add desktop</a>
+            <a class="btn btn-warning btn-lg m-1" href="compatibilitydt.php">Desktops</a>
         </div>
-        <div>
-            <a class="btn btn-danger btn-lg m-1 " href="parts.php">Add hardware</a>
-        </div>
-
 
     </main>
 

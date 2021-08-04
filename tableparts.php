@@ -22,7 +22,7 @@ try{
     }
     else $query = "SELECT * FROM parts";
     $data = $db->query($query);
-    echo '<table width="70%" border="1" cellpadding="5" cellspacing="5">
+    echo '<table width="100%" border="2" cellpadding="5" cellspacing="5">
     <tr>
     <th>id</th>
     <th>Manufacturer</th>
@@ -31,6 +31,12 @@ try{
     <th>ram</th>
     <th>cpu</th>
     <th>charging_pin</th>
+    <th>display</th>
+    <th>graphics_card</th>
+    <th>other</th>
+
+
+
     
     </tr>';
     foreach($data as $row)              
@@ -43,6 +49,9 @@ try{
         <td>'.$row["ram"].'</td> 
         <td>'.$row["cpu"].'</td> 
         <td>'.$row["charging_pin"].'</td> 
+        <td>'.$row["display"].'</td> 
+        <td>'.$row["graphics_card"].'</td> 
+        <td>'.$row["other"].'</td> 
 
 
         
@@ -55,4 +64,3 @@ catch(PDOException $error)
     
     $error -> getMessage();
 }
-?>

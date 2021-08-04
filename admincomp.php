@@ -7,15 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] =='POST'){
 $category = $_POST['category'];
 $manufacturer = $_POST['manufacturer'];
 $model = $_POST['model'];
+$display = $_POST['display'];
 $storage = $_POST['storage'];
 $ram = $_POST['ram'];
-$market_price= $_POST['market_price'];
 
 $errors = array();
 
 if(!$errors){
-    $statement = "INSERT INTO computer( category,manufacturer,model,storage,ram,market_price) values (?,?,?,?,?,?)";
-    $data = array ($category,$manufacturer, $model ,$storage,$ram, $market_price);
+    $statement = "INSERT INTO desktop( category,manufacturer,model,display,storage,ram,market_price) values (?,?,?,?,?,?,?)";
+    $data = array ( $category,$manufacturer, $model, $display,$storage,$ram,$market_price);
     $query = $db -> prepare ($statement);
     $query -> execute($data);
     header("location: admindash.php");
@@ -31,13 +31,14 @@ if(!$errors){
 ?>
 
 <main class="container-fluid">
+
     <div class="row mt-10">
         <div class="col-7 m-auto card shadow">
 
 
 
             <h1 class=text-center>Admin Section</h1>
-            <h1 class=>Laptop Details</h1>
+            <h1 class=>Desktop Details</h1>
             <form action="" method="post" enctype="multipart/form-data">
 
 
@@ -70,15 +71,12 @@ if(!$errors){
 
 
                 </div>
-
                 <div class="mb-3">
                     <label for="ram">RAM</label>
                     <input type="ram" class="form-control" id="ram" name="ram" required>
 
 
                 </div>
-
-
 
 
                 <div class="mb-3">
@@ -100,5 +98,3 @@ if(!$errors){
 <?php
 
 include_once "./layouts/main/footer.php";
-
-?>
