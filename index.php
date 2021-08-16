@@ -1,6 +1,8 @@
 <?php
 include_once './layouts/main/header.php';
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 ?>
 
 <!-- Jumbotron -->

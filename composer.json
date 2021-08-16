@@ -1,0 +1,22 @@
+{
+  "name": "david/hardware-compatibility-checker",
+  "autoload": {
+    "psr-4": {
+      "David\\HardwareCompatibilityChecker\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Coder6384",
+      "email": "mwangidavid1067@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.3"
+  }
+}
